@@ -5,7 +5,7 @@ from io import StringIO
 def write_csv(file, filename):
     file_path = os.path.join('csv_files', filename)
     file.save(file_path)
-    return os.path.abspath(file_path)  # Retorna la ruta completa del archivo guardado
+    return os.path.abspath(file_path)
 
 def load_csv_to_db(file_path, model):
     with open(file_path, 'r', encoding='utf-8') as f:
